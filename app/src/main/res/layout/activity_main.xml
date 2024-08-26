@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#194568">
+
+    <ImageView
+        android:id="@+id/BMIIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+
+    <EditText
+        android:id="@+id/hightet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_design"
+        android:padding="14dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="12dp"
+        android:hint="Enter Your hight"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/BMIIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/wightet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_design"
+        android:padding="14dp"
+        android:textAlignment="center"
+        android:hint="Enter Your weight"
+        android:inputType="numberDecimal"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/hightet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:text="BMI"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="15dp"
+      app:layout_constraintTop_toBottomOf="@id/wightet"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="12dp" />
+
+    <TextView
+        android:id="@+id/BMItv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="BMI is : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/et_design"
+        android:padding="15dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/showbtn"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/BMItype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Your BMI is : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/et_design"
+        android:padding="15dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/BMItv"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
